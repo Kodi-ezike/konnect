@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+}
+.logo{
+    display: flex;
+    width: 50%; 
+}
+.logo-image{
+    width: 50px;
+    height: auto;
+}
+.logo-text{ 
+    color:  #00315C;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+}
+.menu-container{
+    width: 70%;
+}
+.open,.close{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li a{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5C5C5E;
+}
+li a:hover{
+   color: #00315C;
+}
+.btn1{
+    width: 150px;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #166085 ;
+    border: 1px solid #166085 ;
+    outline: 1px solid #166085 ;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    align-items: center;
+}
+.text{
+    width: 35%;
+    margin-right: 4rem;
+} 
+.heading{
+    font-size: 48px;
+    font-family: 'Rubik', sans-serif;
+}
+.service{
+    color: #00315C;
+}
+.description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9C9B9B;
+    margin: 20px 0;
+}
+.store{
+    margin-right: 5px;
+}
+.image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.login-img{
+   height: 500px;
+   width: auto;
+   position: relative;
+   z-index: 1;
+   left: 20px;
+   
+}
+.phone-img{
+    height: 420px;
+    width: auto;
+    
+}
+#about{
+    background: linear-gradient(to right, white , rgb(234, 234, 248));
+}
+
+@media screen and (max-width:1024px) {
+    .text{
+        width: 50%;
+        margin-right: 4rem;
+    } 
+}
+
+
+
+
+@media screen and (max-width:770px){
+    .logo{
+        padding: 1rem 2rem ;
+    }
+    header{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    #links{
+       display: none ;  
+    }
+    .open{
+        display: block;  
+        font-size: 25px;
+        color: #012c52;
+        position: absolute;
+        top: 1.6rem;
+        right: 2rem; 
+    }
+    .close{
+        position: absolute;
+        display: none;
+        top: 1.4rem;
+        right: 2rem; 
+        font-size: 30px;
+        color: #012c52;
+    }
+    .menu-container{
+        width: 100%;
+    }
+    .menu{
+        position: absolute;
+        width:100%;
+        background-color: #012c52;
+        padding: 1rem 0;
+        z-index: 2;
+    }
+    .menu li{
+        border-bottom: 1px solid #9C9B9B;
+        padding: 1rem 2rem;
+    }
+    #download{
+        border-bottom: none;
+    }
+    .menu a{
+        color: #9C9B9B;
+    }
+    li a:hover{
+        color: white;
+     }
+    .flex1{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem;
+    }
+    .text{
+        width: 100%;
+        margin: auto;
+       text-align: center;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .image{
+        margin: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .login-img{
+        height: auto;
+        width: 180px;
+    }
+    .phone-img{
+        height: auto;
+        width: 140px;
+    }
+    .store{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .login-img{
+        height: auto;
+        width: 150px;
+    }
+    .phone-img{
+        height: auto;
+        width: 120px;
+    }
+
+}
